@@ -5,8 +5,8 @@ import winston from 'winston';
 
 import { router } from './routes';
 
-export const pinoLogger = pino({})
-export const tsLogger = new Logger({});
+export const pinoLogger = pino()
+export const tsLogger = new Logger();
 export const winstonLogger = winston.createLogger({});
 
 const app = new Koa();
